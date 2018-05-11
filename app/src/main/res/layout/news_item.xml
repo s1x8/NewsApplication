@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ImageViewNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHeadline"
+            style="@style/HeadlineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="The Resurgence of Manchester United in 1990 " />
+
+        <TextView
+            android:id="@+id/textViewSection"
+            style="@style/NewsProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHeadline"
+            tools:text="Football " />
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            style="@style/NewsProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSection"
+            tools:text="Marco veratti" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            style="@style/NewsProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewSection"
+            android:layout_alignParentRight="true"
+            tools:text="24 October 2011" />
+
+    </RelativeLayout>
+
+</LinearLayout>
